@@ -34,3 +34,25 @@ let myFunction = function(){
 //Object
 //Functions
 
+///************************* Stack & Heap*************************************/
+
+//Stack (Primitive) , Heap (Non Primitive)
+
+firstName = "Wonderwoman"
+secondName = firstName
+console.log(secondName);
+secondName ="SuperMan"
+console.log(firstName);
+console.log(secondName);
+
+userOne = {
+    email:"goodbye@yahoo.com",
+    place:"Goa"
+}
+
+userTwo = userOne
+
+userTwo.place = "Kerala"
+
+console.log(userOne);
+console.log(userTwo);
