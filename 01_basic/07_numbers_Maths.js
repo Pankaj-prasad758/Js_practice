@@ -10,7 +10,7 @@ const currentScore = new Number(300)
 //console.log(currentScore.toString())
 //console.log(currentScore.toString().length);
 //console.log(typeof currentScore);
-//console.log(currentScore.toFixed(3));
+//console.log(currentScore.toFixed(4));
 
 // const otherNumber = 29.89878
 const otherNumber = 45.565785

@@ -36,4 +36,16 @@ let currentDate = new Date("2024-07-23") // YY-MM-DD format
         month: "long"
     
      })
-     console.log(nextDate);
+     //console.log(nextDate);
+
+
+     const ruleDate = Date()
+     //console.log(Date.now());
+     //console.log(Math.floor(Date.now() / 1000));
+
+     ruleDate.toLocaleString('default',{
+      weekday:'long',
+      month:'long',       
+      timezone:"default"            // use can define multiple properties in this object
+     })
+     console.log(ruleDate);
