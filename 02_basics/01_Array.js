@@ -35,9 +35,18 @@ const myArr = [1,2,3,4,5]
 
 const yourArr = myArr.slice(1,3) // start from 1 to last val(3) not count in slice method.
 //console.log(yourArr);
-console.log("A",myArr);
+//console.log("A",myArr);
 
 const areArr = myArr.splice(1,3)
-console.log("B",areArr);
-console.log(myArr);
+//console.log("B",areArr);
+//console.log(myArr);
+
+const userArr = [1998,12,21,"Mukesh",true,]
+const newUserArr =[...userArr]   // shallow copy in Array give copy of reference of Original array
+
+newUserArr[0] = 2004;
+newUserArr[2] = "Rock-N-Roll"
+//console.log(userArr);
+//console.log(newUserArr); 
+
 
