@@ -12,12 +12,14 @@ const jsUser = {    // How we declare an object
     isLoggedIn: false,
     lastLoginDays: ["Monday","Friday"]
 }
-//console.log(jsUser);
+console.log(jsUser.email);
+console.log(jsUser['email']);
+console.log(jsUser);
 //console.log(jsUser.lastLoginDays); // how to access an oject
 //console.log(jsUser["full name"]);
 //console.log(jsUser.name);
 //console.log(jsUser.sym);
-//console.log(jsUser[sym]);
+console.log(jsUser[sym]);
 
 //**** how to change or over write the values in object */
 
@@ -34,9 +36,9 @@ jsUser.name = "Shamsher" // not work because of (Object.Freeze)
 jsUser.greeting = function(){
     console.log("hello everyone");
 }
-console.log(jsUser.greeting());
+// console.log(jsUser.greeting());
 
 jsUser.greetingTwo = function(){
     console.log(`hello everyone and ${this.name}`);
 }
-console.log(jsUser.greetingTwo());
+// console.log(jsUser.greetingTwo());
