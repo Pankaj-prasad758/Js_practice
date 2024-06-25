@@ -3,7 +3,7 @@
 //**function syntax */
 
 function myName(){
-    console.log("pankaj");
+    // console.log("pankaj");
 }
 
 myName()
@@ -20,9 +20,18 @@ console.log("pankaj"); // never execute beacuse of return
 }
 
 const addition = addTwoNumbers(22,8) 
-console.log("Addition: ", addition)
+// console.log("Addition: ", addition)
 
-function userLoggedIn(username){
+function userLoggedIn(username = "Checked"){
+    // if (username === undefined) {
+    //     console.log("please enter username");
+    //     return
+    // }
+    if (!username) {
+        console.log("please enter username");
+        return
+    }
     return`${username} just logged in `
 }
-console.log(userLoggedIn("pankaj"))
+// console.log(userLoggedIn("pankaj"))
+console.log(userLoggedIn("pankaj")) // gives undefine when you print this 
