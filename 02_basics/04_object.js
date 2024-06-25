@@ -57,8 +57,27 @@ const User = [
 // console.log(User[1]);
 User[0].email // to access User data
 
-console.log(Object.keys(instaUser));
-console.log(Object.values(instaUser)); 
-console.log(Object.values(instaUser)); // to access object data output in Array form
-console.log(Object.entries(instaUser)); // gives val in array syntax [[key:value],[key:value]] array in other array
-console.log(instaUser.hasOwnProperty("123ggg")); // works on key of object // ==> to check whether the val present in object or not 
+// console.log(Object.keys(instaUser));
+// console.log(Object.values(instaUser)); 
+// console.log(Object.values(instaUser)); // to access object data output in Array form
+// console.log(Object.entries(instaUser)); // gives val in array syntax [[key:value],[key:value]] array in other array
+// console.log(instaUser.hasOwnProperty("123ggg")); // works on key of object // ==> to check whether the val present in object or not 
+
+const game = {
+    playerName:"Shadow",
+    rank: 10,
+    Weapon:"Sniper-AWG"
+
+}
+// game.Weapon = "Shortgun"
+// console.log(game);
+
+const {Weapon} = game // object de structure
+const {Weapon:gun} = game // object de structure also de-structure the val but result same
+console.log(Weapon);
+console.log(gun);
+
+const navbar = ({company}) => {
+                            // For React 
+}
+navbar(company="tiger")
