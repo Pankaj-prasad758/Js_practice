@@ -33,10 +33,10 @@ const obj_2 = {3:"c", 4:"d"}
 const obj_3 = {6:"e", 5:"f"}
 
 const obj_4 = Object.assign({},obj_1,obj_2,obj_3) // how to combine or add objects
-// console.log(obj_4);
+console.log(obj_4); //optional chaining
 
 //another way
-const newObj = {...obj_1,...obj_2,...obj_3}
+const newObj = {...obj_1,...obj_2,...obj_3} // spread operator
 // console.log(newObj);
 
 // const obj_5 = Object.assign(obj_1,obj_2,obj_3)
@@ -56,6 +56,7 @@ const User = [
 
 // console.log(User[1]);
 User[0].email // to access User data
+console.log(User[1].email) // to access User data
 
 // console.log(Object.keys(instaUser));
 // console.log(Object.values(instaUser)); 
@@ -71,6 +72,9 @@ const game = {
 }
 // game.Weapon = "Shortgun"
 // console.log(game);
+
+game.rank = 1
+console.log(game);
 
 const {Weapon} = game // object de structure
 const {Weapon:gun} = game // object de structure also de-structure the val but result same

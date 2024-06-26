@@ -24,8 +24,8 @@ const newArr = [1,2,3,4,5]
 //console.log(newArr.includes(3)); // to check whether the val exist in array or not .
 
 const secArr = newArr.join() // join basically bind the element or val of that array and convert all val into String
-// console.log(newArr);
-// console.log(secArr);
+console.log(newArr);
+console.log(secArr);
 //console.log(typeof secArr);
 
 //**Slice and Splice Method in Array
@@ -33,13 +33,13 @@ const secArr = newArr.join() // join basically bind the element or val of that a
 const myArr = [1,2,3,7,5]
 //console.log("A",myArr);
 
-const yourArr = myArr.slice(2,4) // start from 1 to last val(3) not count in slice method.
-// console.log(yourArr);
-// console.log("A",myArr);
+const yourArr = myArr.slice(2,4) // start from 1 to last val(4) not count in slice method.
+console.log("A",yourArr);
+console.log(myArr);
 
 const areArr = myArr.splice(1,3) // in splice method last val of range (3) is count 
-// console.log("B",areArr);
-// console.log(myArr);
+console.log("B",areArr);
+console.log(myArr);
 
 const userArr = [1998,12,21,"Mukesh",true,]
 const newUserArr =[...userArr]   // shallow copy in Array give copy of reference of Original array

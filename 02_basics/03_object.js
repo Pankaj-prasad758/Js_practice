@@ -23,14 +23,14 @@ console.log(jsUser[sym]);
 
 //**** how to change or over write the values in object */
 
-jsUser.name = "bhagat singh"
+// jsUser.name = "bhagat singh"
 //console.log(jsUser.name);
 
 
 // how to lock the value in object 
 
 // Object.freeze(jsUser)
-jsUser.name = "Shamsher" // not work because of (Object.Freeze)
+// jsUser.name = "Shamsher" // not work because of (Object.Freeze)
 //console.log(jsUser);
 
 jsUser.greeting = function(){
@@ -41,4 +41,4 @@ jsUser.greeting = function(){
 jsUser.greetingTwo = function(){
     console.log(`hello everyone and ${this.name}`);
 }
-// console.log(jsUser.greetingTwo());
+console.log(jsUser.greetingTwo());

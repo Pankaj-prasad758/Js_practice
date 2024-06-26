@@ -4,7 +4,7 @@ const real_king = ["Lion","Eleplhant","Water","Sun"]
 
 // fiction_hero.push(real_heros)
 // console.log(fiction_hero);
-//console.log(fiction_hero[4][0]);  // to access the val from second array
+// console.log(fiction_hero[4][0]);  // to access the val from second array
 
 //**concat */
 
@@ -21,13 +21,15 @@ const real_king = ["Lion","Eleplhant","Water","Sun"]
 //**condition in which array contain array  */
 
 const otherArray = [1,2,3,4,[3,4,5,],6,7,[8,9,[2,3,[4,6,7,["pankaj","cool"],17],4,6],6],5]
+// const userArray = otherArray.flat(Infinity)
 // const userArray = otherArray.flat(Infinity) // simply convert all inner array into one array 
 // console.log(userArray);
 
 // console.log(Array.isArray("pankaj")); // to check 
-console.log(Array.from("pankaj")); // from convert this string into array 
+// console.log(Array.from("pankaj")); // from convert this string into array 
+// console.log(Array.isArray(("pankaj"))); // from convert this string into array 
 
-// console.log(Array.from({name:"golden"})); // gives empty array
+console.log(Array.from({name:"golden"})); // gives empty array
 
 let score_1 = 100
 let score_2 = 200

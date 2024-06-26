@@ -30,7 +30,7 @@ const newValue = -898
 //console.log(Math.abs(newValue));
 //console.log(Math.abs(-18));  // convert neg to positive val
 //console.log(Math.ceil(16.1)); // gives hight val
-//console.log(Math.round(20.7));  // gives val as per exponential notation
+// console.log(Math.round(20.49));  // gives val as per exponential notation
 //console.log(Math.floor(23.7));  // gives low val
 //console.log(Math.max(23,8,98,198,1000)); // check the lowest val
 //console.log(Math.min(22,32,12,));
@@ -47,5 +47,6 @@ console.log(Math.floor(Math.random()*10) + 1 );
 const min = 10
 const max = 20
 console.log(Math.floor(Math.random() * (max - min + 1) + min ));
+// console.log(Math.floor(Math.random()* (max - min + 1) + min));
  //console.log(Math.floor(Math.random() * (max - min + 1)) + min) // to get the value between 10 to 20 formula
  //console.log(Math.floor(Math.random() * (max - min + 1) + min));
