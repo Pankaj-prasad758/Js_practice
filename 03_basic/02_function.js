@@ -28,3 +28,22 @@ function accessMyArray(checkArray){
 
 }
 console.log(accessMyArray([100,200,"good-morning",true]))
+
+const obj_1 = {
+    username:"jack",
+    price:177
+}
+
+const obj_2 = {
+    username:"kelly",
+    price:277
+}
+
+function checkUersDetails(anyObj){
+  return`username is ${anyObj.username} and price for that user is ${anyObj.price}`
+}
+console.log(checkUersDetails(obj_1));
+console.log(checkUersDetails({
+    username:"dark",
+    price: 1233
+}));
