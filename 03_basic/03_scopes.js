@@ -39,7 +39,7 @@ function addOne(num){
     return num +1
 }
 
-console.log(addTwo(2)); // throw error
 const addTwo = function(num){
     return num +1
 }
+console.log(addTwo(2)); // throw error
