@@ -44,3 +44,14 @@
 // console.log(userName());
 
 
+// console.log(Math.pow(2,2));
+
+let a = 9
+let b = 2
+
+function pythGorus(a, b){
+  let c = a * a + b * b
+  console.log(c);
+  
+}
+pythGorus(12,41)
