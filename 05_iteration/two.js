@@ -21,13 +21,8 @@ while (userArray < yourArray.length) {
 let score = 1
 
 do {
-    console.log(`value of score ${score}`);
+    // console.log(`value of score ${score}`);
     score++
 } while (score <= 10);
-
-
-
-
-
 
 
