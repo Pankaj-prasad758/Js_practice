@@ -57,6 +57,9 @@ val1 = undefined ?? null
 val1 = null ?? "pankaj" ?? 14 // assign first val after nall which in "pankaj"
 console.log(val1);
 
+let fishing = null ?? undefined ?? "total error 5"
+console.log(fishing);
+
 
 //* (ternary) operator (?)
 
