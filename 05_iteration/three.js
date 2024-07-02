@@ -11,5 +11,18 @@ for (const num of arr) {
 let namaste = "ram ram bhai"
 
 for (const greet of namaste) {
-console.log(`single character ${greet}`);    
+    
+// console.log(`Each character of ${greet}`);    
+}
+
+const map = new Map()
+map.set('In', 'India') // * print only unique key and values
+map.set('Fr', 'France')
+map.set('USA', 'United state of America')
+map.set('Is', 'Israel')
+// console.log(map);
+
+for (const [key,values] of map) {
+    console.log(key ,":-" ,values);
+    
 }
