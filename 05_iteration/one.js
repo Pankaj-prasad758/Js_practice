@@ -38,9 +38,10 @@ for (let index = 0; index < arr.length; index++) {
 // }
 for (let index = 1; index <=20; index++) {
   if (index == 5) {
-    console.log(`5 is Detected`);
+    // console.log(`5 is Detected`);
     continue
   }
-  console.log(`value of i is index: ${index}`);
+  // console.log(`value of i is index: ${index}`);
   
 }
+
