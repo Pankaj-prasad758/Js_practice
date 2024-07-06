@@ -1,47 +1,69 @@
 //* For loop 
-      
+ 
 for (let i = 0; i <= 10; i++) {
-    const element = i;
-    if (element == 6) {
-        // console.log("6 is just a number ");
-    }
-    // console.log(element);
-    
-}
-
-for (let i = 0; i <= 10; i++) {
-    // console.log(`Table: ${i}`);
-  for (let j = 0; j <= 10; j++) {
-    // console.log(`Inner loop values: ${j} and inner loop value ${i}`);
-    // console.log(i + '*' + j + ' = ' + i*j);
-  }
-    
-}
-let arrNum = [1,2,3,4,5,6,"hello"]
-// console.log(arrNum.length);
-
-let arr = ["pankaj","Shadow","alone_king","honey_badger"]
-// console.log(arr.lenght); // why this code is not working
-
-for (let index = 0; index < arr.length; index++) {
-  const element = arr[index];
+  const element = i;
   // console.log(element);
+  
 }
 
-// for (let index = 1; index <=20; index++) {
-//   if (index == 5) {
-//     console.log(`5 is Detected`);
-//     break // to stop loop we use (break key word)
-//   }
-//   console.log(`value of i is index: ${index}`);
+for (let i = 0; i <= 10; i++) {
+  const element = i;
+  if (element == 5) {
+    // console.log("5 is best number");
+  }
+  // console.log(element);
   
-// }
-for (let index = 1; index <=20; index++) {
-  if (index == 5) {
-    // console.log(`5 is Detected`);
+}
+
+for (let i = 0; i <= 10; i++) {
+  const element = i;
+  if (element == 5) {
+    // console.log("5 is best number");
+    break // to stop the loop
+  }
+  // console.log(element);
+  
+}
+
+for (let i = 0; i <= 10; i++) {
+  // console.log(`outer loop values ${i}`);
+for (let p = 0; p <= 10; p++) {
+// console.log(`Inner loop values ${p} outer loop ${i}`);
+
+//* how to print a table
+// console.log(i + '*' + p + '=' + i*p);
+}
+  
+}
+
+//* for loop on array
+
+let myArray = ["superman","Batman","Shaktiman"]
+
+for (let index = 0; index < myArray.length; index++) {
+  const element = myArray[index];
+  // console.log(element);
+  
+}
+
+//*Practice break and continue in for loop
+
+for (let index = 0; index <= 10; index++) {
+  const element = index;
+  if (element == 5) {
+    // console.log(`5 is best number`);
+    break
+  }
+  // console.log(element);
+  
+}
+
+for (let index = 0; index <= 10; index++) {
+  const element = index;
+  if (element == 5) {
+    console.log(`5 is best number`);
     continue
   }
-  // console.log(`value of i is index: ${index}`);
+  console.log(element);
   
 }
-
