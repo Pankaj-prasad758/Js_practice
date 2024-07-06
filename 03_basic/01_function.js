@@ -19,6 +19,7 @@ console.log("pankaj"); // never execute beacuse of return
 
 }
 
+
 // const addition = addTwoNumbers(22,8) 
 // console.log("Addition: ", addition)
 
@@ -29,8 +30,8 @@ function subNumber(num1,num2,num3){
 // return result
 return num1 - num2 - num3
 }
-const result = subNumber(2,10,23)
-console.log("result: ", result);
+const result2 = subNumber(2,10,23)
+// console.log("result: ", result);
 
 
 
@@ -47,3 +48,23 @@ function userLoggedIn(username = "Checked"){
 }
 // console.log(userLoggedIn("pankaj"))
 // console.log(userLoggedIn("pankaj")) // gives undefine when you print this 
+
+
+function minusNum(val1, val2){
+// let asnwerVal = (val1 - val2);
+// return asnwerVal
+return val1 - val2
+}
+const  asnwerVal = minusNum(4,10)
+// console.log("answer :-" ,asnwerVal);
+
+
+function userLogin (username = "cook"){
+    if (!username) {
+        console.log("please enter your username");
+        return
+    }
+    return`${username} just logged in`
+    
+}
+console.log(userLogin("james")); // over write the value "cook"

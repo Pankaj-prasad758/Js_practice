@@ -3,26 +3,42 @@
     //* iterator in like a variable & object is the arr or values you want to pass in for of loop
 // }
 
-let arr = [1,2,3,4,5,6]
+const arr = [1,2,3,4,5,6,7,]
+
 for (const num of arr) {
     // console.log(num);
 }
 
-let namaste = "ram ram bhai"
+const greeting = "master roshi"
 
-for (const greet of namaste) {
-    
-// console.log(`Each character of ${greet}`);    
+for (const greet of greeting) {
+    // console.log(`hello ${greet}`);
 }
+
+//*Map
 
 const map = new Map()
-map.set('In', 'India') // * print only unique key and values
-map.set('Fr', 'France')
-map.set('USA', 'United state of America')
-map.set('Is', 'Israel')
-// console.log(map);
+ map.set("In","India")
+ map.set("USA","United State of America")
+ map.set("Fr","France")
+ map.set("Jp","Japan")
+ map.set("Jp","Japan") // not print same values only print unique values
+//  console.log(map);
 
-for (const [key,values] of map) {
-    console.log(key ,":-" ,values);
-    
-}
+ //* how to acces values of Map using for..of loop syntax ⬇️
+
+ for (const  [key , values] of map) {
+    // console.log(key , ':-', values);
+ }
+
+ //* how to access values of Object using for..of loop (not works)
+ 
+ myObj = {
+    'game1':'GTA',
+    'game2':'Total-over-dosge',
+    'game3':'Halo'
+ }
+
+ for (const [key,value] of myObj) {
+    console.log(key,':-',value);
+ }  //* output not work (object is not iterable by for of)

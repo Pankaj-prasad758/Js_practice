@@ -5,12 +5,12 @@ const newScore = new Number(1000)
 //console.log(newScore);
 //console.log(newScore);
 
-const currentScore = new Number(300)
+const currentScore = new Number(300.9876545)
 
 //console.log(currentScore.toString())
-//console.log(currentScore.toString().length);
-//console.log(typeof currentScore);
-//console.log(currentScore.toFixed(4));
+// console.log(currentScore.toString().length);
+// console.log(typeof currentScore); // output object
+// console.log(currentScore.toFixed(4)); //* after .number count
 
 // const otherNumber = 29.89878
 const otherNumber = 45.565785
@@ -18,23 +18,26 @@ const otherNumber = 45.565785
 //console.log(otherNumber.toFixed(2));
 
 const newNumber = 1123.8775677
-//console.log(newNumber.toPrecision(4)) //  for precise values
+// console.log(newNumber.toPrecision(4)) //  for precise values
 
 const indianValues = 1000000
-//console.log(indianValues.toLocaleString()); // to count big numbers ,this makes it easy to count 
-//console.log(indianValues.toLocaleString('en-In'));
-//console.log(indianValues.toLocaleString('en-IN'));
+// console.log(indianValues.toLocaleString()); // to count big numbers ,this makes it easy to count 
+// console.log(indianValues.toLocaleString('en-In'));
+// console.log(indianValues.toLocaleString('en-IN'));
 
 //////////       ************************************** Maths ************* ****************************************************    
-const newValue = -898
-//console.log(Math.abs(newValue));
+const newValue = -898.87
+// console.log(Math.abs(newValue)); //* output always positive
 //console.log(Math.abs(-18));  // convert neg to positive val
 //console.log(Math.ceil(16.1)); // gives hight val
-// console.log(Math.round(20.49));  // gives val as per exponential notation
+// console.log(Math.round(20.59));  // gives val as per exponential notation
 //console.log(Math.floor(23.7));  // gives low val
-//console.log(Math.max(23,8,98,198,1000)); // check the lowest val
+// console.log(Math.max(23,8,98,198,1000)); // check the lowest val
 //console.log(Math.min(22,32,12,));
 //console.log(Math.max(22,32,12,));
+// console.log(Math.ceil(15.1));
+// console.log(Math.floor(9.9));
+// console.log(Math.random(9.5));
 
 //****************************************** Maths random**************************/ 
 console.log(Math.floor(Math.random()*10) + 1 );
@@ -46,7 +49,7 @@ console.log(Math.floor(Math.random()*10) + 1 );
 
 const min = 10
 const max = 20
-console.log(Math.floor(Math.random() * (max - min + 1) + min ));
+// console.log(Math.floor(Math.random() * (max - min + 1) + min ));
 // console.log(Math.floor(Math.random()* (max - min + 1) + min));
  //console.log(Math.floor(Math.random() * (max - min + 1)) + min) // to get the value between 10 to 20 formula
  //console.log(Math.floor(Math.random() * (max - min + 1) + min));

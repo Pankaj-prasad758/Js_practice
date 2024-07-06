@@ -1,9 +1,11 @@
 let score = null
-//console.log(typeof score);
-//console.log(typeof (score));
+// console.log(typeof score); // output object
+// console.log(typeof (score));
 
-let valueInNumber = Number (score)
-//console.log(typeof valueInNumber);
+// let valueInNumber = Number (score) // for strict code that it should be Number
+  let valNum = Number (score)
+  console.log(typeof valNum);
+// console.log(typeof valueInNumber);
 //console.log(valueInNumber);
 
 let isLoggedIn = ""

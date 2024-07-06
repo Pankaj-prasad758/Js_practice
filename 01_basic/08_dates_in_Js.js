@@ -1,33 +1,33 @@
 // Date
 
  let myDate = new Date()
-//console.log(myDate);
-//console.log(myDate.toString());
-//console.log(myDate.toDateString());
-//console.log(myDate.toISOString());
-//console.log(myDate.toLocaleDateString());
-//console.log(myDate.toLocaleTimeString());
+// console.log(myDate);
+// console.log(myDate.toString());
+// console.log(myDate.toDateString());
+// console.log(myDate.toISOString());
+// console.log(myDate.toLocaleDateString());
+// console.log(myDate.toLocaleTimeString());
 //console.log(typeof myDate);
 
-let newDate = new Date(2024,6,20,) // because of array month start from zero(0)
-//let newDate = new Date(2024,6,20,17,30)
-//console.log(newDate.toLocaleString());
+// let newDate = new Date(2024,6,20,) // because of array month start from zero(0)
+// let newDate = new Date(2024,6,20,17,30)
+// console.log(newDate.toLocaleString());
 
 let currentDate = new Date("2024-07-23") // YY-MM-DD format
-     //console.log(currentDate);
-     //console.log(currentDate.getTime() / 1000);
+   //   console.log(currentDate);
+   //   console.log(currentDate.getTime() / 1000);
      
      
      let todayDate = new Date('07-22-2024')
-     //console.log(todayDate.toLocaleString());
-     //console.log(`Today Date ${todayDate.toLocaleString()}`); // string interpolation
+   //   console.log(todayDate.toLocaleString());
+   //   console.log(`Today Date ${todayDate.toLocaleString()}`); // string interpolation
 
      let myTimeStamp =  Date.now() // this gives time in mili second values
-     //console.log(myTimeStamp);
+   //   console.log(myTimeStamp);
      //console.log(Math.floor(Date.now()/1000));
      
      let nextDate = new Date()
-     //console.log(nextDate.getFullYear());
+   //   console.log(nextDate.getFullYear());
      //console.log(nextDate.getMonth() + 1);// give value in array
      //console.log(nextDate.getDay());// start from monday to sunday 1 to 7
 
@@ -40,7 +40,7 @@ let currentDate = new Date("2024-07-23") // YY-MM-DD format
 
 
      const ruleDate = Date()
-     //console.log(Date.now());
+   //   console.log(Date.now());
      //console.log(Math.floor(Date.now() / 1000));
 
      ruleDate.toLocaleString('default',{
@@ -48,4 +48,4 @@ let currentDate = new Date("2024-07-23") // YY-MM-DD format
       month:'long',       
       timezone:"default"            // use can define multiple properties in this object
      })
-     console.log(ruleDate);
+   //   console.log(ruleDate);
