@@ -15,6 +15,15 @@ for (const greet of greeting) {
     // console.log(`hello ${greet}`);
 }
 
+let readSen = "friday is best fucking day"
+
+for (const val of readSen) {
+    if (val == " ") {
+        // console.log("luck");
+       break
+    }
+    console.log(val);
+    }
 //*Map
 
 const map = new Map()
@@ -39,6 +48,6 @@ const map = new Map()
     'game3':'Halo'
  }
 
- for (const [key,value] of myObj) {
-    console.log(key,':-',value);
- }  //* output not work (object is not iterable by for of)
+//  for (const [key,value] of myObj) {
+    // console.log(key,':-',value);
+  //* output not work (object is not iterable by for of)

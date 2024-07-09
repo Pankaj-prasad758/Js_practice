@@ -7,6 +7,7 @@ const myNum = [1,2,3,4,5,6,7,8,9,10]
 
 //* how to access or change values of array using for each loop
 
+
 // const otherNum = []
 
 //   myNum.forEach((num)=>{
@@ -20,4 +21,4 @@ const oneNum = myNum
                .map((num)=> num * 10)
                .map((num)=> num + 1)
                .filter((num)=> num >= 50)
-               console.log(oneNum);
+            //    console.log(oneNum);

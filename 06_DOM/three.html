@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element using JS</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    const Div = document.createElement("div")
+    console.log(Div);
+    Div.className = "main"
+    // Div.id = 'my-div-id'
+    Div.id = Math.round(Math.random() * 10 + 1)
+    Div.setAttribute("title","Most important Div")
+    Div.style.backgroundColor = 'skyblue'
+    Div.style.color = "black"
+    Div.style.padding = '15px'
+    // Div.innerHTML = "D day
+    const divName = document.createTextNode("My name is Shadow")
+    Div.appendChild(divName)
+    document.body.appendChild(Div)
+  
+</script>
+</html>

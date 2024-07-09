@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom create element using function</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <ul class="createMain">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+function addlanguage(langName) {
+    const list = document.createElement('li');
+    list.innerHTML = `${langName}`
+    list.style.fontFamily ="impact"
+    document.querySelector('.createMain').appendChild(list)
+}
+addlanguage("Ruby")
+addlanguage("TypeScript")
+
+function optilanguage(langName) {
+    const listNew = document.createElement('li')
+    listNew.appendChild(document.createTextNode(langName))
+    document.querySelector('.createMain').appendChild(listNew)
+}
+optilanguage("C++")
+
+
+//* edit
+const newName = document.querySelector('li:nth-child(2)')
+const newLi = document.createElement('li')
+newLi.textContent = "Swift"
+newName.replaceWith(newLi)
+
+const secondli = document.querySelector('li:first-child')
+secondli.outerHTML = "<li>rust</li>"
+
+//remove
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+</script>
+</html>

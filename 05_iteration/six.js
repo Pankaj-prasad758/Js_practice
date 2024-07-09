@@ -11,10 +11,30 @@ const values = coding.forEach((item) =>{
 
 const myNum = [1,2,3,4,5,6,7,8,9,10]
 
-const newNum = myNum.filter((num)=>{return num > 5})
-// console.log(newNum);
+// const newNum = coding.forEach((item)=>{
+//     console.log(item);
+// })
+// console.log(newNum);//* for each loop cannot return values
 
-const otherNum  = []
+// const testingNUm = myNum.filter((num)=>(num >= 5))
+// console.log(testingNUm);
+
+let otherNum = []
+
+myNum.forEach((item)=>{
+    if (item >= 0 ) {
+        otherNum.push(item)
+    }
+
+})
+console.log(otherNum);
+
+
+
+
+
+
+// const otherNum  = []
 
 myNum.forEach((items)=>{
     if (items > 5) {
@@ -82,4 +102,8 @@ const myBookCollection = [
 // let myFavBook = myBookCollection.filter((bk)=> bk.Edition >= 2020)
 //  myFavBook = myBookCollection.filter((bk)=> bk.Edition >= 2020 && bk.genre === "non fiction")
  myFavBook = myBookCollection.filter((bk)=> { return bk.genre === "history" && bk.Publish >= 2000 })
-console.log(myFavBook); 
+// console.log(myFavBook); 
+
+// let myBook = myBookCollection.filter((bk)=>bk.genre === "non fiction")
+let myBook = myBookCollection.filter((bk)=>bk.genre === "non fiction" && bk.Edition >= 2007)
+console.log(myBook);
