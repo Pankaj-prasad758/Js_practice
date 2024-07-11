@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+
+body{
+    background-color: #212121;
+    color: #ffff;
+   
+}
+.main_section{
+    display: grid;
+    place-items: center;
+    margin: 20px 0;
+
+}
+.main_section .button{
+    height:auto;
+    width: 200px;
+    text-align: center;
+    background-color: black;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: .2s linear;
+
+
+}
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#coral{
+    background-color: coral;
+}
+.main_section .button:hover{
+    border: 1px solid black;
+scale: 1.1;
+}
