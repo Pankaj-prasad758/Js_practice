@@ -66,39 +66,44 @@
 <script>
 
     //** still work but not a right approch
-
-    //  document.getElementById('two').onclick() = function(){
-    //     alert('image two is clicked')
-    // }
+document.getElementById('one').onclick = function(){
+    // alert('one is clicked')
+    
+}
     //attachEvent() used in old times
     //jQuery .on 
     
-    document.getElementById('images').addEventListener('click',function(e){  //* event bubbbling
-        console.log('clicked inside the ul');
-    },false)
-    
-    document.getElementById('four').addEventListener('click',function(e){
-        console.log('clicked the four');
-         e.stopPropagation()                                        // stopPropagation() use  stop the event bubbling 
+document.getElementById('two').addEventListener('click',function(){
+    // alert('two is clicked')
+})
+    document.getElementById('images').addEventListener('click',function(e){
+        // console.log('ul clicked')
     },false)
 
+    document.getElementById('five').addEventListener('click',function(e){
+        // console.log('five is clicked')
+        e.stopPropagation()
+        
+    },false)
 
-   document.getElementById('google').addEventListener('click',function(e){
-     e.preventDefault();
-     e.stopPropagation();
-     console.log('google clicked');
-   })
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     console.log('google clicked');
+    //     e.preventDefault()
+    //     e.stopPropagation()
 
-   document.getElementById('images').addEventListener('click',function(e){
-     console.log(e.target.parentNode);
-    
-     if(e.target.tagName === 'DIV'){
+    // },false)
+
+
+
+document.querySelector('#images').addEventListener('click',function(e){
+    // console.log(e.target.parentNode);
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'DIV'){
         console.log(e.target.id);
-        removeItems = e.target.parentNode
-        removeItems.remove()
+        let removeIt = e.target.parentNode
+         removeIt.remove()
      }
-     
-    //  removeItems.parentNode.removeChild(removeItems)
-   })
+    removeIt.parentNode.removeChild(removeIt)
+},false)
 </script>
 </html>
