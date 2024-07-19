@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+        h1{
+            text-transform: uppercase;
+        }
+        #stop{
+            padding: 10px 20px;
+            border-radius:10px ;
+            background-color: gray;
+            border: none;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Date: 18 July 2024</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+   const textChange =  function(){
+     document.querySelector('h1').innerHTML = "you Have 15 days for prep"
+    // alert("go pankaj your time is coming")
+   }
+   const stopH1 = setTimeout(textChange,2000)
+
+   document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(stopH1)
+    console.log("stoped");
+   })
+</script>
+</html>
