@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night_Mode</title>
+    <style>
+        .container{
+        
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+          
+        }
+        h1{
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+
+        }
+        p{
+            font-size: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-transform:uppercase ;
+            font-size: 16px;
+            text-decoration: none;
+            border: none;
+            background-color: #212121;
+            color: #ffffff;
+        }
+        body.night-mode {
+  background-color: black;
+  color: white;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Night-Mode</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam nesciunt perspiciatis ducimus explicabo enim necessitatibus sit inventore, est, ab blanditiis dolor quae dolorem sunt exercitationem modi maiores architecto consequuntur corporis perferendis! Maxime, reiciendis vero, nam molestias et cupiditate suscipit, dolorem assumenda officia est fuga dolores ullam eum incidunt explicabo doloribus praesentium quas vel! Natus, sapiente? Maxime ut debitis provident nobis inventore impedit repellat reiciendis, explicabo architecto optio perspiciatis! Quas est quibusdam cupiditate suscipit omnis sed quia repudiandae culpa animi perferendis earum libero consequatur nemo sit facere, excepturi et ratione dolores, minus dolor. Commodi libero iste consectetur quam cupiditate, voluptates, temporibus in non molestias quo vel. Quas quos earum delectus aperiam tempore dolorem ipsam dicta voluptatibus nemo! Tempore facere ducimus fuga, atque odio excepturi quam rem maiores, corporis voluptatem voluptatum voluptate consequuntur deleniti, quasi magni natus odit explicabo ut rerum nobis tenetur porro? Numquam beatae eveniet vitae, dolorem, architecto natus eum inventore nihil veritatis odio modi unde excepturi rem blanditiis sunt enim. Ipsa id nulla totam saepe, illo nesciunt repudiandae beatae magnam reprehenderit nihil consequuntur quaerat, accusantium repellendus. Aperiam explicabo distinctio quam iure? Omnis sunt rerum dicta, recusandae cupiditate quam dolorem quibusdam animi exercitationem eos? Distinctio dolorem hic corporis iste.</p>
+    <button>Night-Mode</button>
+</div>
+</body>
+<script>
+    let isNightMode = false;
+
+    document.querySelector('button').addEventListener('click',function nightMode(){
+        isNightMode = !isNightMode;
+
+if (isNightMode) {
+   document.body.style.backgroundColor = 'black';
+   document.body.style.color = 'white';
+} else {
+   document.body.style.backgroundColor = 'white';
+   document.body.style.color = 'black';
+}
+    })
+</script>
+</html>

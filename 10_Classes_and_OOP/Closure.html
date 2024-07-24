@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lexical_Closure</title>
+</head>
+<body style="background-color: #212121;">
+    <button id="purple">Purple</button>
+    <button id="coral">Coral</button>
+    
+</body>
+<script>
+    function outer() {
+        let username = 'pankaj'
+        function inner() {
+            console.log("inner",username);
+        }inner()
+    }
+    outer()
+        
+    
+</script>
+<script>
+ function changeBG(color) {
+    return function(){
+        document.body.style.backgroundColor = `${color}`
+    }
+ }
+
+ document.getElementById("purple").onclick = changeBG('purple')
+ document.getElementById("coral").onclick = changeBG('coral')
+
+</script>
+</html>
