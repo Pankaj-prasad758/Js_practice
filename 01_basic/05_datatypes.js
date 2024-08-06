@@ -8,14 +8,18 @@ const userLoggedIn = false
 const userName = "Shadow"
 const userEmail = undefined
 
+const userID = Symbol("123")
+const userIDOne = Symbol("123")
+console.log(userID === userIDOne); // output false because Symbol generate unique ID
+
 const id = Symbol('123')
 const anotherId = Symbol('123')
 //console.log(id === anotherId);
 const bigNumber =78998789982932761515151515111515n
-//console.log(bigNumber);
+console.log(typeof bigNumber);
 
 const exArray = ["hunt","hide","hussle","hunger"]
-console.log(typeof exArray);
+// console.log(typeof exArray);
 const productDetials = {
     name:"hangover",
     age:34,
@@ -39,11 +43,11 @@ let myFunction = function(){
 //Stack (Primitive) , Heap (Non Primitive)
 
 firstName = "Wonderwoman"
-secondName = firstName
-console.log(secondName);
+// secondName = firstName
+// console.log(secondName);
 secondName ="SuperMan"
-console.log(firstName);
-console.log(secondName);
+// console.log(firstName);
+// console.log(secondName);
 
 userOne = {
     email:"goodbye@yahoo.com",
@@ -54,5 +58,5 @@ userTwo = userOne
 
 userTwo.place = "Kerala"
 
-console.log(userOne);
-console.log(userTwo);
+// console.log(userOne);
+// console.log(userTwo);

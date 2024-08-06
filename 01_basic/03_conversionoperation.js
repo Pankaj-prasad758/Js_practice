@@ -1,17 +1,12 @@
-let score = null
-// console.log(typeof score); // output object
-// console.log(typeof (score));
 
-// let valueInNumber = Number (score) // for strict code that it should be Number
-  let valNum = Number (score)
-  console.log(typeof valNum);
-// console.log(typeof valueInNumber);
-//console.log(valueInNumber);
+let score = "45"
 
-let isLoggedIn = ""
+let newNumber = Number(score)
+// console.log( newNumber);
+let isLoggedIn = 1
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-//console.log( booleanIsLoggedIn);
+// console.log( booleanIsLoggedIn);
 
 // 1 => true;
 // 0 => false;
@@ -40,10 +35,6 @@ let someNumber = 40
 //console.log(+true);
 //console.log(+"");
 
-let gameCounter = 200
-gameCounter++;
-// console.log(gameCounter);
-let x = 3;
-const y = x++;
-
-console.log(`x:${x}, y:${y}`);
+let gameCounter = 12
+++gameCounter;
+console.log(gameCounter);

@@ -1,25 +1,29 @@
 const firstName = "Pankaj"
 const projectCount = 10
-//  console.log(firstName + projectCount + "Completed"); // concatenate
-// console.log(`Hello my name is ${firstName.toUpperCase()} and my total project count ${projectCount}`);
-// const gamerName = new String('Pankaj-cool')
-const gamerName = new String('Pankaj-cool')
-// console.log(gamerName[0]); // to know the character position
-// console.log(gamerName.__proto__);
-// console.log(gamerName.__proto__);
-// console.log(gamerName.length); //* start from (0)
-//console.log(gamerName.toLocaleUpperCase());
-// console.log(gamerName.charAt(3)); // specific index position in a string
-// console.log(gamerName.indexOf('j')); //* start from 0
-const stringGameName = gamerName.substring(0,5) // end val 5 not count 
-// console.log(stringGameName);
-const anotherString = gamerName.slice(0,4) //*end val (4) not count
-// console.log(anotherString);
-const newStringOne = "   DarkWorld   "
-//console.log(newStringOne);
-//console.log(newStringOne.trim());
-const url ="htpps://pankaj.com/pankaj@protfolio20%welcom"
-//console.log(url);
-//console.log(url.replace('20%' , '800%'));
-console.log(newStringOne.includes('Dark')); // to check whether that word exist in string or not 
-console.log(newStringOne.includes('light'));
+
+const gameName = new String("Far-Cry-latest-edition-2024")
+// console.log(gameName[1]); // key value pair
+// console.log(gameName.toLocaleUpperCase());
+// console.log(gameName.toLowerCase());
+// console.log(gameName.charAt(0));
+// console.log(gameName.indexOf("C"));
+const newGame = gameName.substring(3,3)
+// console.log(newGame);
+
+const gameTwo = gameName.slice(-5,3)
+// console.log(gameTwo);
+const gameThree = "    pankaj    "
+const firstGame = gameThree.trim()
+// console.log(firstGame);
+
+const Url = "https://pankaj@google/www.com"
+const usewUrl = Url.replace("www","ok")
+// console.log(usewUrl);
+console.log(gameName.search(/latest/));
+console.log(gameName.split("-"));
+
+const newUser = 21
+console.log(typeof newUser);
+const userTwo = newUser.toString()
+console.log(typeof userTwo);
+console.log(gameName.repeat(190));
